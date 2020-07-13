@@ -1,0 +1,786 @@
+$color--white: rgb(255, 255, 255);
+$color--black: rgb(0, 0, 0);
+$color--title: rgb(23, 109, 186);
+$color--hover: rgb(235, 0, 139);
+@font-face {
+  font-family: fontT;
+  src: url(SVN-GilroyBold.otf);
+}
+html {
+  font-size: 62.5%;
+}
+
+@mixin title {
+  color: $color--title;
+  line-height: 3rem;
+  font-family: fontT;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@mixin rectanglegadiant($width: 100px, $height: 20px) {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.6026785714285714) 2%,
+    rgba(4, 173, 237, 1) 94%
+  );
+  width: $width;
+  height: $height;
+  margin-top: 7px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.header {
+  &__contact {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    background: rgb(0, 173, 238);
+    background: linear-gradient(
+      63deg,
+      rgba(0, 173, 238, 1) 14%,
+      rgba(43, 56, 143, 1) 94%
+    );
+    color: $color--white;
+    padding: 14px 0;
+    li {
+      &:nth-child(4) {
+        img {
+          width: 146px;
+          height: 40px;
+          position: absolute;
+          top: 3%;
+          left: 69.5%;
+        }
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: rgb(0, 172, 237);
+      top: 41px;
+      left: -80px;
+      height: 2px;
+      width: 160px;
+      transform: rotate(117deg);
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: white;
+      top: -27px;
+      left: -62px;
+      height: 19px;
+      width: 160px;
+      transform: rotate(117deg);
+    }
+  }
+  &__link {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    margin: 25px 0;
+    font-weight: 700;
+  }
+}
+.background {
+  width: 100%;
+  &--style {
+    width: 100%;
+  }
+}
+
+.service {
+  cursor: pointer;
+  margin-top: 84px;
+  &__img {
+    position: relative;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    &:hover {
+      .mask {
+        transition: 0.3s;
+        background-color: $color--hover;
+      }
+    }
+    .mask {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(35, 41, 69, 0.6);
+      top: 0;
+      left: 0;
+    }
+    &--icon {
+      margin-top: 29px;
+      margin-left: 7px;
+      img {
+        width: 20%;
+        height: 20%;
+      }
+      display: flex;
+      position: absolute;
+      z-index: 1;
+
+      top: 0;
+      left: 0;
+    }
+  }
+  &__content {
+    margin-left: 10px;
+
+    &--title {
+      font-family: fontT;
+      font-weight: bold;
+      color: $color--white;
+
+      font-size: 2.6rem;
+    }
+    &--text {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      line-height: 18px;
+      color: white;
+      font-weight: 400;
+    }
+    &--link {
+      margin-top: 22px;
+      font-weight: bold;
+      font-size: 14;
+      color: $color--white;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.new {
+  .space {
+    width: 100%;
+    height: 30px;
+  }
+  margin-top: 130px;
+  .tag {
+    display: flex;
+    &__rec {
+      @include rectanglegadiant();
+    }
+
+    &__title {
+      @include title();
+    }
+  }
+  .main {
+    cursor: pointer;
+    position: relative;
+    &__button {
+      position: absolute;
+      padding: 4px 6px;
+      background-color: $color--hover;
+      display: inline-block;
+      border-radius: 1rem;
+      font-size: 16px;
+      color: $color--white;
+      top: 12px;
+      left: 24px;
+    }
+    &__circle {
+      cursor: pointer;
+      display: flex;
+      position: absolute;
+      top: 14px;
+      right: 20px;
+      li {
+        list-style: none;
+        margin: 0 2px;
+        width: 11px;
+        height: 11px;
+        background-color: grey;
+        border-radius: 12px;
+        &:hover {
+          transition: 0.3s;
+          background-color: $color--hover;
+        }
+      }
+    }
+    &__title {
+      line-height: 1.5;
+      position: absolute;
+      bottom: 86px;
+      left: 21px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      width: 95%;
+      color: $color--white;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      &:hover {
+        transition: 0.3s;
+        color: $color--hover;
+      }
+    }
+    &__mask {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.59) 80%
+      );
+    }
+    &__content {
+      position: absolute;
+      bottom: 42px;
+      left: 23px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $color--white;
+      line-height: 1.5;
+      display: block;
+      display: -webkit-box;
+      max-width: 86%;
+      margin: 0 auto;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .extra {
+    cursor: pointer;
+    display: flex;
+
+    &__img {
+      margin-top: 40px;
+      img {
+        width: 106px;
+        height: 84px;
+        object-fit: cover;
+      }
+    }
+    &__info {
+      margin-top: 40px;
+      margin-left: 10px;
+    }
+    &__title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      &:hover {
+        transition: 0.3s;
+        color: $color--hover;
+      }
+    }
+    &__content {
+      margin-top: 6px;
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    &__time {
+      margin-top: 10px;
+      font-size: 1.3rem;
+      opacity: 0.6;
+    }
+  }
+  .video {
+    &__img {
+      position: relative;
+    &--service {
+        width: 100%;
+        height: 410px;
+        object-fit: cover;
+      }
+      &--left{
+        cursor: pointer;
+        position: absolute;
+        top: 153px;
+        left: -20px;
+     width: 44px;
+          height: 44px;
+        }
+        &--right{
+          cursor: pointer;
+          position: absolute;
+          top: 153px;
+            right: -20px;
+           width: 44px;
+            height: 44px;
+        }
+    
+    }
+    
+    &__mask {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 120px;
+      opacity: 0.8;
+      background-color: $color--hover;
+    }
+    &__title {
+      cursor: pointer;
+      position: absolute;
+      bottom: 50px;
+      left: 21px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      width: 95%;
+      color: white;
+      line-height: 1.5;
+      &:hover {
+        transition: 0.3s;
+        color: rgb(170, 169, 169);
+      }
+    }
+    &__link {
+      cursor: pointer;
+      position: absolute;
+      bottom: 40px;
+      right: 17px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-style: italic;
+
+      color: white;
+      line-height: 1.5;
+      &:hover {
+        transition: 0.3s;
+        color: rgb(170, 169, 169);
+      }
+    }
+  }
+}
+
+.category {
+  .space-create {
+    width: 100%;
+    height: 80px;
+  }
+  position: relative;
+  a {
+    position: absolute;
+    color: $color--black;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    opacity: 0.5;
+    top: 50px;
+    right: 14px;
+  }
+  margin-top: 80px;
+  .tag {
+    display: flex;
+
+    &__rec {
+      @include rectanglegadiant();
+    }
+    &__title {
+      @include title();
+    }
+  }
+  .info {
+    &__image {
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      padding-left: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-weight: 600;
+      width: 95%;
+      color: $color--hover;
+      line-height: 1.5;
+      &:hover {
+        color: rgb(111, 111, 111);
+        transition: 0.3s;
+      }
+    }
+    &__content {
+      padding-left: 10px;
+      cursor: pointer;
+      font-size: 1.3rem;
+      font-weight: 400;
+      width: 95%;
+      color: $color--black;
+      line-height: 1.5;
+    }
+    &__time {
+      padding-left: 10px;
+      cursor: pointer;
+      font-size: 1.3rem;
+      font-weight: 400;
+      width: 95%;
+      color: $color--black;
+      line-height: 1.5;
+      opacity: 0.5;
+    }
+  }
+  .extra {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+      img {
+        width: 82px;
+        height: 64px;
+      }
+    }
+    &__title {
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 1.4rem;
+      font-weight: 600;
+      width: 75%;
+      color: $color--black;
+      line-height: 1.5;
+      &--time {
+        font-weight: 400;
+        opacity: 0.5;
+      }
+      &:hover {
+        color: $color--hover;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .hero {
+    cursor: pointer;
+    position: relative;
+    &__image {
+      img {
+        width: 100%;
+        height: 340px;
+      }
+    }
+    &__mask {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: black;
+      opacity: 0.5;
+    }
+    &__title {
+      font-weight: 600;
+      position: absolute;
+      bottom: 40px;
+      left: 20px;
+      width: 85%;
+      font-size: 1.6rem;
+      line-height: 1.8;
+      color: $color--white;
+      &:hover {
+        color: $color--hover;
+        transition: 0.3s;
+      }
+    }
+    &__time {
+      font-size: 1.4rem;
+      line-height: 2.2;
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
+.team {
+  .background {
+    img {
+      width: 100%;
+      height: 711px;
+      object-fit: cover;
+    }
+  }
+  position: relative;
+  .title {
+    margin-top: 100px;
+    display: flex;
+    &__rec {
+      @include rectanglegadiant();
+    }
+    &__text {
+      @include title();
+    }
+  }
+  .content {
+    position: absolute;
+    margin-top: 20px;
+    font-size: 15px;
+    color: $color--black;
+    width: 700px;
+    line-height: 1.5;
+    top: 174px;
+    left: 369px;
+  }
+
+  .member {
+    background-color: white;
+    top: 165px;
+    position: absolute;
+    &__img {
+      &--main{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      } 
+      &--left{
+        cursor: pointer;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: 188px;
+        left: -33px;
+      
+      } 
+      &--right{
+        cursor: pointer;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: 188px;
+        right: -33px;
+      }
+    }
+    &__name {
+      @include title();
+      font-size: 1.8rem;
+      color: $color--black;
+      text-align: center;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+    &__lv {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.button {
+  .space {
+    position: relative;
+    width: 100%;
+    height: 94px;
+    span {
+      position: absolute;
+      font-weight: 600;
+      font-size: 14px;
+      color: rgb(40, 177, 58);
+      bottom: 15px;
+      right: 69px;
+    }
+    img {
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+    }
+  }
+}
+.footer {
+.introduce{
+  margin-top: 10px;
+  background-color: rgb(243, 243, 243);;
+  
+  &__top{
+    position: relative;
+
+    img{
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+
+    }
+    &--inside{
+
+    }
+    &--avata{
+      img{
+        position: absolute;
+        top:10px;
+        left: 10px;
+        width: 54px;
+        height: 54px;
+        object-fit: cover;
+      }
+    }
+    &--title{
+      position: absolute;
+      top: 10px;
+      left: 72px;
+      font-size: 16px;
+      font-weight: 600;
+      color: $color--white;
+
+    }
+    &--like{
+      font-size: 13px;
+      color: $color--white;
+      position: absolute;
+      top: 31px;
+      left: 72px;
+    }
+    &--left{
+      border-radius: 4px;
+      cursor: pointer;
+      padding:3px 10px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-size: 16px;
+     
+      background-color: rgb(243, 243, 243);
+      display: inline-block;
+      font-weight: 600;
+      i{ 
+        color: #0D8CF0;
+      }
+    }
+    &--right{
+      border-radius: 4px;
+      cursor: pointer;
+      padding:3px 10px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: rgb(243, 243, 243);
+      display: inline-block;
+
+    }
+    
+  }
+
+  .mask{
+    margin:7px 7px; 
+       background-color: white;
+    .like{
+      padding-left: 10px;
+      padding-top:10px;
+        font-size: 14px;
+        font-weight: 600;
+      
+    }
+    .person{
+   
+     justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      img{
+        margin-top: 5px;
+        object-fit: cover;
+        width: 34px;
+        height: 34px;
+      }
+    }
+  }
+
+
+}
+
+  .partner {
+    &__title {
+      @include title();
+      font-size: 20px;
+      color: rgb(41, 60, 141);
+      margin-bottom: 15px;
+    }
+    &__logo {
+      img {
+        width: 177px;
+        margin-top: 15px;
+      }
+    }
+  }
+  .ruler {
+    width: 100px;
+    height: 2px;
+    background-color: rgb(151, 151, 151);
+  }
+  .view{
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: black;
+  }
+  .contact{
+    &__info{
+      &--title{
+        margin-top: 15px;
+        font-weight: 600;
+        font-family: fontT;
+        font-size: 16px;
+        color: rgb(143, 25, 130);
+    
+      }
+
+      &--home{
+
+        font-weight: 600;
+      font-size: 14px;
+    color:black;
+  margin-top: 10px;      }
+    }
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1380px;
+  }
+}
