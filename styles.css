@@ -36,6 +36,78 @@ img {
   z-index: 4;
   position: relative;
 }
+.header .navbar {
+  position: relative;
+  cursor: pointer;
+}
+.header .navbar__icon {
+  font-size: 3rem;
+  margin-top: -6px;
+  margin-left: 15px;
+}
+.header .navbar__background {
+  z-index: 2;
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  top: 72px;
+  left: 16px;
+  width: 300px;
+  height: 300px;
+  opacity: 0.6;
+  background-color: #232945;
+  border-radius: 9px;
+}
+.header .navbar__background::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -25px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: #232945;
+  transform: rotate(180deg);
+}
+.header .navbar__list {
+  position: absolute;
+  z-index: 3;
+  top: 75px;
+  left: 39px;
+  width: 121px;
+  text-decoration: none;
+}
+.header .navbar__list--link {
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+.header .navbar__list--link a {
+  color: white;
+}
+.header .navbar__login {
+  position: absolute;
+  width: 140px;
+  z-index: 4;
+  top: 96px;
+  left: 154px;
+}
+.header .navbar__login--fb {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.header .navbar__login--fb a {
+  color: white;
+}
+.header .navbar__login--fb a i {
+  color: #16a4fb;
+}
+.header .navbar__login--normal {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.header .navbar__login--normal a {
+  color: white;
+}
 .header__contact {
   position: absolute;
   display: flex;
@@ -117,10 +189,11 @@ img {
   left: -41px;
 }
 
-.background {
+.background__slide {
+  position: relative;
   width: 100%;
 }
-.background--style {
+.background__slide .mySlidestwo {
   width: 100%;
 }
 
@@ -436,9 +509,12 @@ img {
   position: relative;
   margin-top: 80px;
 }
+.category .box__shadow {
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.1);
+}
 .category .space-create {
   width: 100%;
-  height: 80px;
+  height: 140px;
 }
 .category a {
   position: absolute;
@@ -474,6 +550,7 @@ img {
   object-fit: cover;
 }
 .category .info__title {
+  margin-top: 15px;
   padding-left: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -516,7 +593,7 @@ img {
   opacity: 0.5;
 }
 .category .extra {
-  margin-top: 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-around;
 }
@@ -556,7 +633,7 @@ img {
 }
 .category .hero__image img {
   width: 100%;
-  height: 340px;
+  height: 360px;
 }
 .category .hero__mask {
   position: absolute;
@@ -857,6 +934,26 @@ img {
   color: black;
   margin-top: 10px;
 }
+.footer__end {
+  margin-top: 15px;
+  position: relative;
+}
+.footer__end--background {
+  width: 100%;
+  height: 72px;
+  background: #00adee;
+  background: linear-gradient(97deg, #00adee 11%, #2b388f 83%);
+}
+.footer__end--content {
+  position: absolute;
+  top: 39%;
+  left: 13%;
+  font-size: 1.6rem;
+  color: white;
+}
+.footer__end--content span {
+  font-weight: bold;
+}
 
 .slider-container {
   height: 417px;
@@ -952,6 +1049,11 @@ img {
     top: 10px;
   }
 }
+@media (max-width: 767.98px) {
+  .partner__margin {
+    margin-left: 0 !important;
+  }
+}
 @media (max-width: 1199.98px) and (min-width: 992px) {
   .service__img--scope {
     width: 40px;
@@ -962,7 +1064,7 @@ img {
     height: 44px;
   }
   .service__content--title {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .tag {
@@ -978,6 +1080,13 @@ img {
   .new .space {
     height: 60px;
   }
+  .new .video__title {
+    bottom: 46px !important;
+  }
+
+  .category .extra__title {
+    max-width: 64%;
+  }
 }
 @media (max-width: 991.98px) {
   .header__link {
@@ -986,20 +1095,61 @@ img {
   .header__logo {
     width: 195px;
   }
+  .header .menu {
+    display: block;
+  }
 
   .tag {
-    margin-top: 60px;
+    margin-top: 163px;
+  }
+  .tag__rec {
+    width: 60px !important;
+  }
+  .tag__title {
+    font-size: 1.9rem !important;
   }
 
   .new {
     margin-top: 20px;
   }
   .new .menu {
-    right: -179px;
+    right: -160px;
   }
 
   .partner {
     margin-top: 20px;
+  }
+}
+@media (max-width: 409.98px) {
+  .new .menu {
+    right: -84px;
+  }
+
+  .video__link {
+    bottom: 7px !important;
+  }
+
+  .category .extra__title {
+    max-width: 64%;
+  }
+  .category__item {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 575.98px) {
+  .header .navbar {
+    position: absolute;
+    top: 40px;
+    left: -4px;
+  }
+  .header .navbar__icon {
+    top: 38px;
+    position: absolute;
+    left: 248px;
+  }
+  .header .navbar__background::before {
+    left: 245px;
+    top: -28px;
   }
 }
 

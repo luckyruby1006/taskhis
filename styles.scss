@@ -91,10 +91,93 @@ img {
    
   }
 }
+  .navbar{
+    position: relative;
+    cursor: pointer;
+   
+    &__icon{
+      font-size: 3rem;
+      margin-top: -6px;
+      margin-left: 15px;
+    }
+ 
+    &__background{
+      z-index: 2;
+      cursor: pointer;
+      font-size: 3rem;
+      position: absolute;
+      top: 72px;
+      left: 16px;
+      width: 300px;
+      height: 300px;
+      opacity: 0.6;
+      background-color:  rgb(35, 41, 69);
+      border-radius: 9px;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: -25px;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-top-color: rgb(35, 41, 69);
+      transform: rotate(180deg);
+    }
+ 
+
+    }
+
+    &__list{
+      position: absolute;
+      z-index: 3;
+      top: 75px;
+      left: 39px;
+      width: 121px;
+      text-decoration: none;
+     &--link{
+       margin: 20px 0 ;
+       font-size: 1.8rem;
+      
+       a{
+        color: $color--white;
+       }
+     }
+    }
+    &__login{
+      position: absolute;
+      width: 140px;
+      z-index: 4;
+      top: 96px;
+      left: 154px;
+
+      &--fb{
+        font-weight: bold;
+        font-size: 2rem;
+        
+        a{
+          color: $color--white;
+          i{
+            color: rgb(22,164,251);
+          }
+        }
+     
+      }
+      &--normal{
+        margin-top: 30px;
+        font-size: 2rem;
+        
+     a{
+      color: $color--white;
+     }
+
+      }
+    }
+    
+  }
 
   &__contact {
     position: absolute;
-   
     display: flex;
     top: 0;
     left: 26.5%;
@@ -185,10 +268,15 @@ img {
 }
 }
 .background {
+ 
+ &__slide{
+  position: relative;
   width: 100%;
-  &--style {
+  .mySlidestwo{
     width: 100%;
   }
+  
+}
 }
 
 .service {
@@ -497,9 +585,12 @@ img {
 }
 
 .category {
+  .box__shadow{
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.1);
+  }
   .space-create {
     width: 100%;
-    height: 80px;
+    height: 140px;
   }
   position: relative;
   a {
@@ -531,6 +622,7 @@ img {
       }
     }
     &__title {
+      margin-top: 15px;
       padding-left: 10px;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -568,7 +660,7 @@ img {
     }
   }
   .extra {
-    margin-top: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-around;
     &__img {
@@ -605,7 +697,7 @@ img {
     &__image {
       img {
         width: 100%;
-        height: 340px;
+        height: 360px;
       }
     }
     &__mask {
@@ -915,6 +1007,32 @@ img {
     }
 
   }
+  &__end{
+    margin-top: 15px;
+    position: relative;
+    &--background{
+      width: 100%;
+      height: 72px;
+      background: rgb(0, 173, 238);
+      background: linear-gradient(
+        97deg,
+        rgba(0, 173, 238, 1) 11%,
+        rgba(43, 56, 143, 1) 83%
+      );
+    }
+    &--content{
+      position: absolute;
+      top: 39%;
+      left: 13%;
+      font-size:1.6rem;
+      color:white;
+      span{
+        font-weight: bold;
+      }
+
+    }
+  }
+
 }
 
 
@@ -1023,16 +1141,23 @@ img {
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { }
+
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {  }
+@media (max-width: 767.98px) { 
+  .partner{
+    &__margin{
+      margin-left: 0!important;
+    }
+  }
+ }
 
 // Medium devices (tablets, less than 992px)
 
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) and (min-width: 992px){
+  
   .service{
     &__img{
       &--scope{
@@ -1046,10 +1171,12 @@ img {
     }
     &__content{
       &--title{
-        font-size: 2rem ;
+        
+        font-size: 1.9rem ;
       }
     }
   }
+
   .tag{
       margin-top: 30px;
     &__rec{
@@ -1066,6 +1193,18 @@ img {
     .space{
       height: 60px;
     }
+    .video{
+      &__title{
+        bottom: 46px!important;
+      }
+    }
+  }
+  .category{
+    .extra{
+      &__title{
+        max-width: 64%;
+      }
+    }
   }
  }
 
@@ -1077,14 +1216,26 @@ img {
      &__logo{
        width: 195px;
      }
+     .menu{
+        display: block;
+      }
+    
+
   }
   .tag{
-    margin-top: 60px;
+    &__rec{
+      width: 60px!important;
+    }
+    &__title{
+      font-size: 1.9rem!important;
+    }
+   
+    margin-top: 163px;
   }
   .new{
     margin-top: 20px;
     .menu{
-      right: -179px;
+      right: -160px;
     }
   }
   
@@ -1094,5 +1245,49 @@ img {
   
   
 }
+@media (max-width:409.98px){
+  .new{
+    .menu{
+      right: -84px;
+    }
+  }
+  .video{
+    &__link{
+      bottom: 7px!important;
+    }
+  }
+  .category{
+    
+    .extra{
+      &__title{
+        
+   
+        max-width: 64%;
+      }
+    }
+    &__item{
+      margin-top: 80px;
+    }
+  }
+}
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width
+@media (max-width: 575.98px) { 
+  .header{
+  .navbar{
+    position: absolute;
+    top: 40px;
+    left: -4px;
+    &__icon{
+      top: 38px;
+      position: absolute;
+      left: 248px;
+    }
+    &__background::before{
+      left: 245px;
+      top: -28px;
+    }
+  }
+
+} 
+}

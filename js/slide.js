@@ -32,4 +32,19 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+var slideIndextwo = 0;
+carouseltwo();
+
+function carouseltwo() {
+  var i;
+  var x = document.getElementsByClassName("mySlidestwo");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndextwo++;
+  if (slideIndextwo > x.length) {slideIndextwo = 1}
+  x[slideIndextwo-1].style.display = "block";
+  setTimeout(carouseltwo, 10000); // Change image every 2 seconds
+}
+
 

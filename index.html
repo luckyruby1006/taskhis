@@ -8,14 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    
+
     <link rel="stylesheet" href="./js/bs/bootstrap.min.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
-   
-    
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b837a6badf.js" ></script>
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b837a6badf.js"></script>
 </head>
 
 <body>
@@ -24,45 +26,72 @@
     <div class="header">
         <div class="container-fluid">
             <div class="container">
-            <div class="row ">
-    
+                <div class="row ">
+
                     <div class="header__logo">
                         <img class="header__logo--image" src="./img/logoVienE101.png" alt="">
                     </div>
 
 
-          
-   
-                   
-                        <ul class="header__contact">
-                            <li>Phone:086.889.1318</li>
-                            <li>Thứ 2 - thứ 7 (8am - 6pm)</li>
-                            <li>bvetuvanonline@gmail.com</li>
-                            <li>
-                                <div class="header__fb">
-                                    <img class="header__facebook" src="./img/group4.png" alt="">
-                                </div>
-                                <span> Bệnh viện E</span>
-                            </li>
-                            <li>Đăng nhập</li>
-                        </ul>
-                
-
-                            <ul class="header__link">
-
-                                <li><a href="#">Trang chủ</a></li>
-                                <li><a href="#">Giới thiệu</a></li>
-                                <li><a href="#">Dịch vụ</a></li>
-                                <li><a href="#">Tin tức</a></li>
-                                <li><a href="#">Chuyên khoa</a></li>
-                                <li><a href="#">Đào tạo-NCKH</a></li>
-                                <li><a href="#">Liên Hệ</a></li>
+                    <div class="navbar">
+                        <div class="navbar__icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="navbar__background"></div>
+                        <div class="navbar__list">
+                            <ul>
+                                <li class="navbar__list--link"><a href="#"> Trang chủ</a></li>
+                                <li class="navbar__list--link"><a href="#">Giới thiệu</a></li>
+                                <li class="navbar__list--link"><a href="#">Dịch vụ</a></li>
+                                <li class="navbar__list--link"><a href="#">Tin tức</a></li>
+                                <li class="navbar__list--link"><a href="#">Chuyên khoa</a></li>
+                                <li class="navbar__list--link"><a href="#">Đào tạo-NCKH</a></li>
+                                <li class="navbar__list--link"><a href="#">Liên hệ</a></li>
                             </ul>
-                      
-                 
-           
+                        </div>
+                        <div class="navbar__login">
+                            <div class="navbar__login--fb">
+                               <a href="#"><i class="fab fa-facebook-square"></i>
+                                Bệnh viện E</a> 
+                            </div>
+
+                            <div class="navbar__login--normal">
+                               <a href="#"> <i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <ul class="header__contact">
+                        <li>Phone:086.889.1318</li>
+                        <li>Thứ 2 - thứ 7 (8am - 6pm)</li>
+                        <li>bvetuvanonline@gmail.com</li>
+                        <li>
+                            <div class="header__fb">
+                                <img class="header__facebook" src="./img/group4.png" alt="">
+                            </div>
+                            <span> Bệnh viện E</span>
+                        </li>
+                        <li>Đăng nhập</li>
+                    </ul>
+
+
+                    <ul class="header__link">
+
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Chuyên khoa</a></li>
+                        <li><a href="#">Đào tạo-NCKH</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+
+
+
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <!-- end header -->
@@ -72,9 +101,12 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="background--style">
+                <div class="background__slide">
+                    <img class="mySlidestwo" src="./img/headerimage .png">
+                    <img class="mySlidestwo" src="./img/kham2.jpg">
+                    <img class="mySlidestwo" src="./img/kham.jpg">
+                    <img class="mySlidestwo" src="./img/event1.jpg">
 
-                    <img src="img/headerimage .png" alt="background">
 
                 </div>
             </div>
@@ -89,7 +121,8 @@
                     <div class="service__img">
                         <img class="service__img--style" src="./img/anhdichvu.jpg" alt="">
                         <div class="mask"></div>
-                        <div class="service__img--icon"><img class="service__img--scope" src="./img/stethoscope1@3x.png" alt="">
+                        <div class="service__img--icon"><img class="service__img--scope" src="./img/stethoscope1@3x.png"
+                                alt="">
 
                             <div class="service__content">
                                 <div class="service__content--title">Đặt khám online</div>
@@ -127,8 +160,8 @@
                     <div class="service__img">
                         <img class="service__img--style" src="./img/anhdichvu.jpg" alt="">
                         <div class="mask"></div>
-                        <div class="service__img--icon"><img class="service__img--scope"  src="./img/keyecurityToolInterfaceSymbolOfPassword@3x.png"
-                                alt="">
+                        <div class="service__img--icon"><img class="service__img--scope"
+                                src="./img/keyecurityToolInterfaceSymbolOfPassword@3x.png" alt="">
 
                             <div class="service__content">
                                 <div class="service__content--title">Quy trình khám bệnh</div>
@@ -146,7 +179,8 @@
                     <div class="service__img">
                         <img class="service__img--style" src="./img/anhdichvu.jpg" alt="">
                         <div class="mask"></div>
-                        <div class="service__img--icon"><img  class="service__img--medical" src="./img/medicalHistory1@3x.png" alt="">
+                        <div class="service__img--icon"><img class="service__img--medical"
+                                src="./img/medicalHistory1@3x.png" alt="">
 
                             <div class="service__content">
                                 <div class="service__content--title">Giá dịch vụ</div>
@@ -181,131 +215,134 @@
                         <div class="slider-container__title">
                             Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
                         </div>
-                         <div class="slider-container__content">
-                            Hoạt động khám sàng lọc diễn ra từ 7h00 - 17h00 trong 2 ngày 18,19/11/2017. Địa điểm tại khoa khám bệnh…
-                         </div>
-                        <div class="slider-container__mask"></div>
-                       
-                        <div class="menu">
-                          <label for="slide-dot-1"></label>
-                          <label for="slide-dot-2"></label>
-                          <label for="slide-dot-3"></label>
-                          <label for="slide-dot-4"></label>
-                          <label for="slide-dot-5"></label>
-                          <label for="slide-dot-6"></label>
+                        <div class="slider-container__content">
+                            Hoạt động khám sàng lọc diễn ra từ 7h00 - 17h00 trong 2 ngày 18,19/11/2017. Địa điểm tại
+                            khoa khám bệnh…
                         </div>
-                        
+                        <div class="slider-container__mask"></div>
+
+                        <div class="menu">
+                            <label for="slide-dot-1"></label>
+                            <label for="slide-dot-2"></label>
+                            <label for="slide-dot-3"></label>
+                            <label for="slide-dot-4"></label>
+                            <label for="slide-dot-5"></label>
+                            <label for="slide-dot-6"></label>
+                        </div>
+
                         <input id="slide-dot-1" type="radio" name="slides" checked>
-                          <div class="slide slide-1"></div>
-                        
+                        <div class="slide slide-1"></div>
+
                         <input id="slide-dot-2" type="radio" name="slides">
-                          <div class="slide slide-2"></div>
-                        
+                        <div class="slide slide-2"></div>
+
                         <input id="slide-dot-3" type="radio" name="slides">
-                          <div class="slide slide-3"></div>
+                        <div class="slide slide-3"></div>
 
                         <input id="slide-dot-4" type="radio" name="slides">
-                          <div class="slide slide-4"></div>
+                        <div class="slide slide-4"></div>
 
                         <input id="slide-dot-5" type="radio" name="slides">
-                          <div class="slide slide-5"></div>
+                        <div class="slide slide-5"></div>
 
                         <input id="slide-dot-6" type="radio" name="slides">
-                          <div class="slide slide-6"></div>
-                      </div>
+                        <div class="slide slide-6"></div>
+                    </div>
                 </div>
                 <div class=" col-lg-4 col-xl-3">
 
                     <div class="space"> </div>
                     <div class="box">
-                    <div class="extra">
+                        <div class="extra">
 
-                        <div class="extra__img">
-                            <img src="./img/event1.jpg" alt="">
-                        </div>
-                        <div class="extra__info">
-                            <div class="extra__title">
-                                Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
+                            <div class="extra__img">
+                                <img src="./img/event1.jpg" alt="">
                             </div>
-
-                            <div class="extra__content"> Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
-
-                            </div>
-
-                            <div class="extra__time">22/10/2018</div>
-                        </div>
-
-                    </div>
-                    <div class="extra">
-
-                        <div class="extra__img">
-                            <img src="./img/event1.jpg" alt="">
-                        </div>
-                        <div class="extra__info">
-                            <div class="extra__title">
-                                Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
-                            </div>
-
-                            <div class="extra__content">
-                                 Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
-
-                            </div>
-
-                            <div class="extra__time">22/10/2018</div>
-                        </div>
-
-                    </div>
-                    <div class="extra">
-
-                        <div class="extra__img">
-                            <img src="./img/event1.jpg" alt="">
-                        </div>
-                        <div class="extra__info">
-                            <div class="extra__title">
-                                Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
-                            </div>
-
-                            <div class="extra__content"> Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
-
-                            </div>
-
-                            <div class="extra__time">22/10/2018</div>
-                        </div>
-
-                    </div>
-                </div>
-                </div>
-
-                <div class="col-lg-12 col-xl-4 " >
-                  
-                        <div class="tag">
-                            <div class="tag__rec"></div>
-                            <div class="tag__title">Video nổi bật</div>
-                        </div>
-
-                        <div class="video">
-                            <div class="video__img">
-                                <div class="video__slide">
-                                  <img class="mySlides" src="./img/kham1.jpg" >
-                                  <img class="mySlides" src="./img/kham2.jpg" >
-                                  <img class="mySlides" src="./img/kham.jpg" >
-                                  <img class="mySlides" src="./img/event1.jpg">
-                                
-                                  <div class="video__slide--left " onclick="plusDivs(-1)"><img src="./img/group5@3x.png" alt=""></div>
-                                  <div class="video__slide--right" onclick="plusDivs(1)"><img src="./img/group4@3x.png" alt=""></div>
+                            <div class="extra__info">
+                                <div class="extra__title">
+                                    Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
                                 </div>
 
-                                <div class="video__mask"></div>
-                                <div class="video__title">
-                                    Thông báo: Tuyển sinh khóa đào tạo "Điều dưỡng nội trú tự nguyện"
+                                <div class="extra__content"> Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
+
                                 </div>
-                                <div class="video__link">Xem thêm</div>
-                               
-                               
+
+                                <div class="extra__time">22/10/2018</div>
                             </div>
-                            
+
                         </div>
-                 
+                        <div class="extra">
+
+                            <div class="extra__img">
+                                <img src="./img/event1.jpg" alt="">
+                            </div>
+                            <div class="extra__info">
+                                <div class="extra__title">
+                                    Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
+                                </div>
+
+                                <div class="extra__content">
+                                    Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
+
+                                </div>
+
+                                <div class="extra__time">22/10/2018</div>
+                            </div>
+
+                        </div>
+                        <div class="extra">
+
+                            <div class="extra__img">
+                                <img src="./img/event1.jpg" alt="">
+                            </div>
+                            <div class="extra__info">
+                                <div class="extra__title">
+                                    Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
+                                </div>
+
+                                <div class="extra__content"> Khám sàng lọc tim bẩm sinh cho trẻ em miền núi
+
+                                </div>
+
+                                <div class="extra__time">22/10/2018</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-xl-4 ">
+
+                    <div class="tag">
+                        <div class="tag__rec"></div>
+                        <div class="tag__title">Video nổi bật</div>
+                    </div>
+
+                    <div class="video">
+                        <div class="video__img">
+                            <div class="video__slide">
+                                <img class="mySlides" src="./img/kham1.jpg">
+                                <img class="mySlides" src="./img/kham2.jpg">
+                                <img class="mySlides" src="./img/kham.jpg">
+                                <img class="mySlides" src="./img/event1.jpg">
+
+                                <div class="video__slide--left " onclick="plusDivs(-1)"><img src="./img/group5@3x.png"
+                                        alt=""></div>
+                                <div class="video__slide--right" onclick="plusDivs(1)"><img src="./img/group4@3x.png"
+                                        alt=""></div>
+                            </div>
+
+                            <div class="video__mask"></div>
+                            <div class="video__title">
+                                Thông báo: Tuyển sinh khóa đào tạo "Điều dưỡng nội trú tự nguyện"
+                            </div>
+                            <div class="video__link">Xem thêm</div>
+
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -317,301 +354,311 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-4 col-xl-4">
-                  <div class="category__item">
+                    <div class="category__item">
 
 
-              
-                    <div class="tag">
-                        <div class="tag__rec"></div>
-                        <div class="tag__title">Đào tạo - NCKH</div>
-                    </div>
 
-                    <a href="#"> Xem tất cả</a>
-
-                    <div class="info">
-                        <div class="info__image">
-                            <img src="./img/event1.jpg" alt="even1">
-                        </div>
-                        <div class="info__title">
-                            Tôi đã vượt qua quỷ môn quan như thế nào?
-                        </div>
-                        <div class="info__content">
-                            Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là mắc
-                            phải căn bệnh hiểm nghèo...
-                        </div>
-                        <div class="info__time">22/10/2019</div>
-
-
-                    </div>
-           
-
-                    <hr>
-
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini1.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
+                        <div class="tag">
+                            <div class="tag__rec"></div>
+                            <div class="tag__title">Đào tạo - NCKH</div>
                         </div>
 
-                    </div>
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini2.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
-                        </div>
+                        <a href="#"> Xem tất cả</a>
+                        <div class="box__shadow">
+                            <div class="info">
+                                <div class="info__image">
+                                    <img src="./img/event1.jpg" alt="even1">
+                                </div>
+                                <div class="info__title">
+                                    Tôi đã vượt qua quỷ môn quan như thế nào?
+                                </div>
+                                <div class="info__content">
+                                    Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là
+                                    mắc
+                                    phải căn bệnh hiểm nghèo...
+                                </div>
+                                <div class="info__time">22/10/2019</div>
 
+
+                            </div>
+
+
+                            <hr>
+
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini1.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini2.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                     </div>
                 <div class="col-lg-4 col-xl-4">
                     <div class="category__item">
-                    <div class="tag">
-                        <div class="tag__rec"></div>
-                        <div class="tag__title">Hợp tác quốc tế</div>
-                    </div>
-
-                    <a href="#"> Xem tất cả</a>
-
-                    <div class="info">
-                        <div class="info__image">
-                            <img src="./img/event2.jpg" alt="even1">
-                        </div>
-                        <div class="info__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                        </div>
-                        <div class="info__content">
-                            Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là mắc
-                            phải căn bệnh hiểm nghèo...
-                        </div>
-                        <div class="info__time">22/10/2019</div>
-
-
-                  
-                    <hr>
-
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini4.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
+                        <div class="tag">
+                            <div class="tag__rec"></div>
+                            <div class="tag__title">Hợp tác quốc tế</div>
                         </div>
 
-                    </div>
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini3.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
-                        </div>
+                        <a href="#"> Xem tất cả</a>
+                        <div class="box__shadow">
+                            <div class="info">
+                                <div class="info__image">
+                                    <img src="./img/event2.jpg" alt="even1">
+                                </div>
+                                <div class="info__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                </div>
+                                <div class="info__content">
+                                    Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là
+                                    mắc
+                                    phải căn bệnh hiểm nghèo...
+                                </div>
+                                <div class="info__time">22/10/2019</div>
 
+
+
+                                <hr>
+
+                                <div class="extra">
+                                    <div class="extra__img">
+                                        <img src="img/eventmini4.jpg" alt="">
+                                    </div>
+                                    <div class="extra__title">
+                                        Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                        <div class="extra__title--time">22/10/2019</div>
+                                    </div>
+
+                                </div>
+                                <div class="extra">
+                                    <div class="extra__img">
+                                        <img src="img/eventmini3.jpg" alt="">
+                                    </div>
+                                    <div class="extra__title">
+                                        Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                        <div class="extra__title--time">22/10/2019</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
                 <div class="col-lg-4 col-xl-4">
                     <div class="category__item">
-                    <div class="tag">
-                        <div class="tag__rec"></div>
-                        <div class="tag__title">Kiến thức chuyên môn</div>
-                    </div>
-
-                    <a href="#"> Xem tất cả</a>
-
-                    <div class="info">
-                        <div class="info__image">
-                            <img src="./img/event1.jpg" alt="even1">
-                        </div>
-                        <div class="info__title">
-                            Tôi đã vượt qua quỷ môn quan như thế nào?
-                        </div>
-                        <div class="info__content">
-                            Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là mắc
-                            phải căn bệnh hiểm nghèo...
-                        </div>
-                        <div class="info__time">22/10/2019</div>
-
-
-                    </div>
-                 
-                    <hr>
-
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini5.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
+                        <div class="tag">
+                            <div class="tag__rec"></div>
+                            <div class="tag__title">Kiến thức chuyên môn</div>
                         </div>
 
-                    </div>
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini6.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
-                        </div>
+                        <a href="#"> Xem tất cả</a>
+                        <div class="box__shadow">
+                            <div class="info">
+                                <div class="info__image">
+                                    <img src="./img/event1.jpg" alt="even1">
+                                </div>
+                                <div class="info__title">
+                                    Tôi đã vượt qua quỷ môn quan như thế nào?
+                                </div>
+                                <div class="info__content">
+                                    Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là
+                                    mắc
+                                    phải căn bệnh hiểm nghèo...
+                                </div>
+                                <div class="info__time">22/10/2019</div>
 
+
+                            </div>
+
+                            <hr>
+
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini5.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini6.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
             <div class="row">
                 <div class="space-create"></div>
             </div>
             <div class="row  ">
                 <div class="col-lg-4 col-xl-4">
                     <div class="category__item">
-                    <div class="tag">
-                        <div class="tag__rec"></div>
-                        <div class="tag__title">Y học thưởng thức</div>
-                    </div>
-
-                    <a href="#"> Xem tất cả</a>
-
-                    <div class="info">
-                        <div class="info__image">
-                            <img src="./img/event1.jpg" alt="even1">
-                        </div>
-                        <div class="info__title">
-                            Tôi đã vượt qua quỷ môn quan như thế nào?
-                        </div>
-                        <div class="info__content">
-                            Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là mắc
-                            phải căn bệnh hiểm nghèo...
-                        </div>
-                        <div class="info__time">22/10/2019</div>
-
-
-                    </div>
-                    <hr>
-
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini4.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
+                        <div class="tag">
+                            <div class="tag__rec"></div>
+                            <div class="tag__title">Y học thưởng thức</div>
                         </div>
 
-                    </div>
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini3.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
-                        </div>
+                        <a href="#"> Xem tất cả</a>
+                        <div class="box__shadow">
+                            <div class="info">
+                                <div class="info__image">
+                                    <img src="./img/event1.jpg" alt="even1">
+                                </div>
+                                <div class="info__title">
+                                    Tôi đã vượt qua quỷ môn quan như thế nào?
+                                </div>
+                                <div class="info__content">
+                                    Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là
+                                    mắc
+                                    phải căn bệnh hiểm nghèo...
+                                </div>
+                                <div class="info__time">22/10/2019</div>
 
+
+                            </div>
+                            <hr>
+
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini4.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini3.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="col-lg-4 col-xl-4">
                     <div class="category__item">
-                    <div class="tag">
-                        <div class="tag__rec"></div>
-                        <div class="tag__title">Ý kiến khách hàng</div>
-                    </div>
-
-                    <a href="#"> Xem tất cả</a>
-
-                    <div class="info">
-                        <div class="info__image">
-                            <img src="./img/event2.jpg" alt="even1">
-                        </div>
-                        <div class="info__title">
-                            Tôi đã vượt qua quỷ môn quan như thế nào?
-                        </div>
-                        <div class="info__content">
-                            Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là mắc
-                            phải căn bệnh hiểm nghèo...
-                        </div>
-                        <div class="info__time">22/10/2019</div>
-
-
-                    </div>
-                    <hr>
-
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini5.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
+                        <div class="tag">
+                            <div class="tag__rec"></div>
+                            <div class="tag__title">Ý kiến khách hàng</div>
                         </div>
 
-                    </div>
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini6.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
-                        </div>
+                        <a href="#"> Xem tất cả</a>
+                        <div class="box__shadow">
+                            <div class="info">
+                                <div class="info__image">
+                                    <img src="./img/event2.jpg" alt="even1">
+                                </div>
+                                <div class="info__title">
+                                    Tôi đã vượt qua quỷ môn quan như thế nào?
+                                </div>
+                                <div class="info__content">
+                                    Tôi tên là Hường, nhà ở Kim Bảng, Hà Nam, Năm 2017 tôi được các bác sĩ chuẩn đoán là
+                                    mắc
+                                    phải căn bệnh hiểm nghèo...
+                                </div>
+                                <div class="info__time">22/10/2019</div>
 
+
+                            </div>
+                            <hr>
+
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini5.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini6.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="col-lg-4 col-xl-4">
                     <div class="category__item">
-                    <div class="tag">
-                        <div class="tag__rec"></div>
-                        <div class="tag__title">Góc từ thiện</div>
+                        <div class="tag">
+                            <div class="tag__rec"></div>
+                            <div class="tag__title">Góc từ thiện</div>
+                        </div>
+
+                        <a href="#"> Xem tất cả</a>
+                        <div class="box__shadow">
+                            <div class="hero">
+                                <div class="hero__image">
+                                    <img src="./img/anhdichvu.jpg" alt="even1">
+                                </div>
+                                <div class="hero__mask"></div>
+                                <div class="hero__title">
+                                    Thông báo: Tuyển sinh khóa đào tạo "Điều dưỡng nội trú tự nguyện"
+                                </div>
+                                <div class="hero__time">22/10/2019</div>
+
+
+                            </div>
+
+
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini1.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                            <div class="extra">
+                                <div class="extra__img">
+                                    <img src="img/eventmini1.jpg" alt="">
+                                </div>
+                                <div class="extra__title">
+                                    Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
+                                    <div class="extra__title--time">22/10/2019</div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-
-                    <a href="#"> Xem tất cả</a>
-
-                    <div class="hero">
-                        <div class="hero__image">
-                            <img src="./img/anhdichvu.jpg" alt="even1">
-                        </div>
-                        <div class="hero__mask"></div>
-                        <div class="hero__title">
-                            Thông báo: Tuyển sinh khóa đào tạo "Điều dưỡng nội trú tự nguyện"
-                        </div>
-                        <div class="hero__time">22/10/2019</div>
-
-
-                    </div>
-
-
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini1.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
-                        </div>
-
-                    </div>
-                    <div class="extra">
-                        <div class="extra__img">
-                            <img src="img/eventmini1.jpg" alt="">
-                        </div>
-                        <div class="extra__title">
-                            Lương y như từ mẫu, tôi sống được là nhờ các bác sĩ bệnh viện E đã cứu chữa...
-                            <div class="extra__title--time">22/10/2019</div>
-                        </div>
-
-                    </div>
-                </div>
                 </div>
             </div>
             .
@@ -621,75 +668,75 @@
     <section class="team">
         <div class="container">
             <div class="row ">
-                        <div class="title">
-                            <div class="title__rec"></div>
-                            <div class="title__text">Đội ngũ của chúng tôi</div>
-                        </div>
-              
-                        <!-- <div class="content">Đội ngũ bác sĩ có trình độ chuyên môn cao, nhiều năm kinh nghiệm, giàu y đức. All exposed surfaces of the house should be cleaned using a bleach containing cleanser to kill all germs. It’s best to wear rubber gloves while cleaning. The cleaning rags should be then disposed of or sanitized with hot water and bleach before next use.</div>
+                <div class="title">
+                    <div class="title__rec"></div>
+                    <div class="title__text">Đội ngũ của chúng tôi</div>
+                </div>
+
+                <!-- <div class="content">Đội ngũ bác sĩ có trình độ chuyên môn cao, nhiều năm kinh nghiệm, giàu y đức. All exposed surfaces of the house should be cleaned using a bleach containing cleanser to kill all germs. It’s best to wear rubber gloves while cleaning. The cleaning rags should be then disposed of or sanitized with hot water and bleach before next use.</div>
             </div> -->
 
-            <div class="row ">
-                      
-                <div class="person">
-                    <div class="row justify-content-between">
-                <div class="col-auto">
-                    <div class="member">
-                        <div class="member__img">
-                            <img class="member__img--main" src="./img/chandung2.jpg" alt=""></div>
-                            <img  class="member__img--left"  src="./img/group5@3x.png" alt="left">
+                <div class="row ">
 
-                        <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
-                        <div class="member__lv">Phó khoa tim và lồng ngực</div>
-                    </div>
-                </div>
-              
-                <div class="col-auto">
-                    <div class="member">
-                        <div class="member__img">
-                            <img class="member__img--main" src="img/chandung2.jpg" alt=""></div>
-                         
-                               
+                    <div class="person">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img class="member__img--main" src="./img/chandung2.jpg" alt=""></div>
+                                    <img class="member__img--left" src="./img/group5@3x.png" alt="left">
+
+                                    <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
+                                    <div class="member__lv">Phó khoa tim và lồng ngực</div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img class="member__img--main" src="img/chandung2.jpg" alt=""></div>
 
 
-                        <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
-                        <div class="member__lv">Phó khoa tim và lồng ngực</div>
-                    </div>
-                </div>
-              
-                <div class="col-auto">
-                    <div class="member">
-                        <div class="member__img">
-                            <img class="member__img--main" src="img/chandung2.jpg" alt=""></div>
-                            
 
 
-                        <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
-                        <div class="member__lv">Phó khoa tim và lồng ngực</div>
-                    </div>
-                </div>
-              
-                <div class="col-auto">
-                    <div class="member">
-                        <div class="member__img">
-                            <img class="member__img--main" src="img/chandung2.jpg" alt="">
-                            <img class="member__img--right" src="img/group4@3x.png" alt="">
+                                    <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
+                                    <div class="member__lv">Phó khoa tim và lồng ngực</div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img class="member__img--main" src="img/chandung2.jpg" alt=""></div>
+
+
+
+                                    <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
+                                    <div class="member__lv">Phó khoa tim và lồng ngực</div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="member">
+                                    <div class="member__img">
+                                        <img class="member__img--main" src="img/chandung2.jpg" alt="">
+                                        <img class="member__img--right" src="img/group4@3x.png" alt="">
+                                    </div>
+
+
+                                    <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
+                                    <div class="member__lv">Phó khoa tim và lồng ngực</div>
+                                </div>
+                            </div>
                         </div>
-
-
-                        <div class="member__name">THS. NGUYỄN CÔNG HỰU</div>
-                        <div class="member__lv">Phó khoa tim và lồng ngực</div>
                     </div>
-                </div>
-            </div>
-            </div>
-                
-                </div>
-              
-         
 
+                </div>
+
+
+
+            </div>
         </div>
-    </div>
 
 
 
@@ -708,71 +755,71 @@
         </div>
 
     </section>
-<div class="button">
-<div class="container">
-    <div class="row">
-        <div class="space">
-           <span>Hỗ trợ</span> 
-            <img src="img/smsBubbleSpeech@3x.png" alt="">
+    <div class="button">
+        <div class="container">
+            <div class="row">
+                <div class="space">
+                    <span>Hỗ trợ</span>
+                    <img src="img/smsBubbleSpeech@3x.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
     <hr>
 
     <section class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="logo">
                         <img src="./img/logoVienE101.png" style="width: 195px;" alt="">
                     </div>
-                  <div class="introduce">
-                      <div class="introduce__top">
-                          <img src="./img/backgroundfb.jpg" alt="">
-                          <div class="introduce__top--inside">
-                            <div class="introduce__top--avata">
-                                <img src="./img/avatafb.jpg" alt="">
+                    <div class="introduce">
+                        <div class="introduce__top">
+                            <img src="./img/backgroundfb.jpg" alt="">
+                            <div class="introduce__top--inside">
+                                <div class="introduce__top--avata">
+                                    <img src="./img/avatafb.jpg" alt="">
+                                </div>
+                                <div class="introduce__top--title">
+                                    Bệnh viện E
+                                </div>
+                                <div class="introduce__top--like">
+                                    2,792 likes
+                                </div>
                             </div>
-                            <div class="introduce__top--title">
-                                Bệnh viện E
+                            <div class="introduce__top--left">
+                                <i class="fab fa-facebook-square"></i> Like Page
                             </div>
-                            <div class="introduce__top--like">
-                                2,792 likes
+                            <div class="introduce__top--right">
+                                Use App <i class="fas fa-box"></i>
                             </div>
                         </div>
-                        <div class="introduce__top--left">
-                            <i class="fab fa-facebook-square"></i> Like Page
+
+                        <div class="mask">
+                            <div class="like"> 7 friends liked this</div>
+                            <div class="person">
+                                <img src="./img/chandung1.jpg" alt="">
+                                <img src="./img/chandung2.jpg" alt="">
+                                <img src="./img/chandung3.jpg" alt="">
+                                <img src="./img/chandung4.png" alt="">
+                                <img src="./img/chandung1.jpg" alt="">
+                                <img src="./img/chandung1.jpg" alt="">
+                                <img src="./img/chandung1.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="introduce__top--right">
-                            Use App <i class="fas fa-box"></i>
-                        </div>
-                      </div>
-                    
-                      <div class="mask">
-                          <div class="like"> 7 friends liked this</div>
-                          <div class="person">
-                              <img src="./img/chandung1.jpg" alt="">
-                              <img src="./img/chandung2.jpg" alt="">
-                              <img src="./img/chandung3.jpg" alt="">
-                              <img src="./img/chandung4.png" alt="">
-                              <img src="./img/chandung1.jpg" alt="">
-                              <img src="./img/chandung1.jpg" alt="">
-                              <img src="./img/chandung1.jpg" alt="">
-                          </div>
-                      </div>
 
 
 
-                  </div>
+                    </div>
 
 
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="partner partner__margin ">
                         <div class="partner__title">
-                                Hợp tác với các bệnh viện
+                            Hợp tác với các bệnh viện
                         </div>
                         <div class="ruler"></div>
                         <div class="partner__logo">
@@ -783,47 +830,59 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="partner">
                         <div class="partner__title">
-                                Lượt truy cập
+                            Lượt truy cập
                         </div>
                         <div class="ruler"></div>
-                        </div>
-            <div class="view">Số người truy cập: 172</div>
-            <div class="view">Số người oline: 81</div>
-            <div class="view">Tổng lượt truy cập: 174</div>
+                    </div>
+                    <div class="view">Số người truy cập: 172</div>
+                    <div class="view">Số người oline: 81</div>
+                    <div class="view">Tổng lượt truy cập: 174</div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="partner">
                         <div class="partner__title">
-                                Liên hệ
+                            Liên hệ
                         </div>
                         <div class="ruler"></div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__info">
+                            <div class="contact__info--title"> Địa chỉ</div>
+                            <div class="contact__info--home"> 89 Trần Cung - Nghĩa Tân - Cầu Giấy - Hà Nội</div>
                         </div>
-        <div class="contact">
-            <div class="contact__info">
-                <div class="contact__info--title"> Địa chỉ</div>
-                <div class="contact__info--home"> 89 Trần Cung - Nghĩa Tân - Cầu Giấy - Hà Nội</div>
+                        <div class="contact__info">
+                            <div class="contact__info--title"> Phone & Fax</div>
+                            <div class="contact__info--home"> 086 889 1318</div>
+                        </div>
+                        <div class="contact__info">
+                            <div class="contact__info--title"> Email</div>
+                            <div class="contact__info--home">bvetuvanonline@gmail.com</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
-            <div class="contact__info">
-                <div class="contact__info--title"> Phone & Fax</div>
-                <div class="contact__info--home"> 086 889 1318</div>
-            </div>
-            <div class="contact__info">
-                <div class="contact__info--title"> Email</div>
-                <div class="contact__info--home">bvetuvanonline@gmail.com</div>
-            </div>
-            
         </div>
+        <div class="footer__end">
+            <div class="container-fluid">
+                <div class="footer__end--background">
 
-
+                </div>
+                <div class="footer__end--content">
+                    Bản quyền thuộc về <span> Bệnh viện E </span> / Một sản phẩm của  <span>  ISOFH</span>
                 </div>
             </div>
         </div>
     </section>
 
-   
+
+
+
     <!-- Optional JavaScript -->
     <script src="./js/bs/jquery-3.2.1.slim.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -832,6 +891,6 @@
     <script src="./js/bs/bootstrap.min.js"></script>
     <script src="./js/slide.js"></script>
 
-</body>
+</body> 
 
 </html>
