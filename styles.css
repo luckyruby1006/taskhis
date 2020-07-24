@@ -452,7 +452,7 @@ img {
   cursor: pointer;
   position: absolute;
   top: 153px;
-  left: -20px;
+  left: -4px;
   width: 44px;
   height: 44px;
 }
@@ -460,7 +460,7 @@ img {
   cursor: pointer;
   position: absolute;
   top: 153px;
-  right: -20px;
+  right: -4px;
   width: 44px;
   height: 44px;
 }
@@ -730,7 +730,7 @@ img {
   margin-top: 20px;
   font-size: 15px;
   color: black;
-  width: 700px;
+  width: 80%;
   line-height: 1.5;
   top: 174px;
   left: 369px;
@@ -1043,6 +1043,11 @@ img {
   .container {
     max-width: 1456px;
   }
+
+  .team .content {
+    left: 360px;
+    width: 40%;
+  }
 }
 @media (max-width: 1274px) {
   .header__contact {
@@ -1172,7 +1177,6 @@ img {
 
   .team .content {
     left: 50px;
-    width: 300px;
   }
 }
 @media (max-width: 409.98px) {
