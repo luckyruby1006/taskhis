@@ -718,6 +718,7 @@ img {
   }
 }
 .team {
+
   .person {
    
     top: 38%;
@@ -1111,6 +1112,11 @@ img {
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) and (min-width: 992px) {
+  .team{
+    .content{
+      left: 150px;
+    }
+  }
   .service {
     &__img {
       &--scope {
@@ -1202,17 +1208,42 @@ img {
       font-size: 1.9rem !important;
     }
 
-    margin-top: 163px;
+    margin-top: 160px;
   }
   .new {
-    margin-top: 20px;
+    margin-top: -123px;
     .menu {
       right: -160px;
+    }
+   .video--margin{
+     margin-top: 20px;
     }
   }
 
   .partner {
     margin-top: 20px;
+  }
+  .category{
+    margin-top: -100px;
+    
+      &__margin{
+        margin-top: 0;
+      }
+    
+  }
+  .team{
+    .carousel-right{
+      right: 68%;
+    }
+    .carousel-left{
+     left: 68%;
+    }
+  }
+  .team{
+    .content{
+      left: 50px;
+      width: 300px;
+    }
   }
 }
 @media (max-width: 409.98px) {
@@ -1234,6 +1265,16 @@ img {
     }
     &__item {
       margin-top: 80px;
+    }
+  }
+  .team{
+    margin-top: 100px;
+    .carousel-right{
+      right: 32%; 
+
+    }
+    .carousel-left{
+      left: 32%;
     }
   }
 }
